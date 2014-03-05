@@ -428,7 +428,3 @@ Address.objects.filter(street__iexact='elm').aggregate(Variance('user__power_lev
 ```
 
 Notice that the SQL is a little different.  I've moved to using a more powerful database, PostgreSQL, since SQLite does not support VAR_POP.  It's very easy when reading the Python code to know we want to see the variance in power_level on Elm street.  It's not obvious to me in the SQL code what we want here.
-
-### Extra
-
-I'll update this section later as I get time.   :(
